@@ -1,25 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import {ShopContainer} from './components/shopcontainer/ShopContainer'
+import {SideLeft} from './components/sideleft/SideLeft'
+import itemContext from './components/context/itemContext';
+import {useState} from "react"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+ const [name, setName] = useState([])
+  const value = {name,setName}
+  
+ 
+  
+    return (
+      <itemContext.Provider value={value}>
+      <div className="App">
+        <SideLeft/>
+        <ShopContainer/>
+        
+      </div>
+      </itemContext.Provider>
+    );
+  
+  
 }
 
 export default App;

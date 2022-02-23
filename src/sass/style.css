@@ -1,0 +1,206 @@
+* {
+  background-color: #1c0a00;
+}
+
+body {
+  margin: 0em;
+  padding: 0em;
+  color: white;
+}
+
+.App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.side {
+  height: 100vh;
+  background-color: #361500;
+  padding: 0.5em;
+}
+
+.side div {
+  background-color: #361500;
+}
+
+.side .side__header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0.4em;
+}
+
+.side .side__header button {
+  border: none;
+  border-radius: 0.5em;
+  padding: 0.3em;
+  background-color: #cc9544;
+}
+
+.side .side__header .modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #cc96447a;
+}
+
+.side .side__header .modal .modal-div {
+  padding: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5em;
+  width: 80%;
+  background-color: #361500;
+  margin: auto;
+  margin-top: 20vh;
+}
+
+.side .side__header .modal .modal-div span {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 0.2em;
+}
+
+.side .side__header .modal .modal-div input {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 0.5em;
+}
+
+.side .side__header .modal .modal-div button span {
+  font-size: 18px;
+  color: white;
+}
+
+.side .side__bodylists {
+  height: 100%;
+  padding: 0.5em;
+}
+
+.side .side__list {
+  background-color: #cc9544;
+  width: 100%;
+}
+
+.side .side__list .side__list-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+}
+
+.side .side__list span {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 18px;
+  background-color: #cc9544;
+  font-size: x-large;
+}
+
+.side .side__list h4 {
+  margin: auto;
+  background-color: #cc9544;
+  font-size: x-large;
+}
+
+.side .side__list div {
+  background-color: #cc9544;
+}
+
+.side .side__list ul {
+  padding: 0px;
+  background-color: #966926;
+}
+
+.side .side__list ul li {
+  list-style: square;
+  background-color: #966926;
+}
+
+.side .side__list--hide {
+  background-color: #cc9544;
+  width: 100%;
+}
+
+.side .side__list--hide .side__list-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+}
+
+.side .side__list--hide span {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: x-large;
+  background-color: #cc9544;
+}
+
+.side .side__list--hide h4 {
+  margin: auto;
+  background-color: #cc9544;
+  font-size: x-large;
+}
+
+.side .side__list--hide div {
+  background-color: #cc9544;
+}
+
+.side .side__list--hide ul {
+  display: none;
+  padding: 0px;
+  background-color: #966926;
+}
+
+.side .side__list--hide ul li {
+  list-style: none;
+  background-color: #966926;
+}
+
+.shop-container {
+  padding: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-y: scroll;
+  height: 95vh;
+}
+
+.shop-container .shop-container--box {
+  overflow-y: scroll;
+}
+
+.shop-container .shop-item {
+  background-color: #603601;
+  margin-bottom: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.shop-container .shop-item h3,
+.shop-container .shop-item h4 {
+  background-color: #603601;
+}
+
+.shop-container .shop-item button {
+  border: none;
+  border-radius: 0.5em;
+  background-color: #cc9544;
+  font-size: 0.9rem;
+}
+/*# sourceMappingURL=style.css.map */

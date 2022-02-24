@@ -5,10 +5,15 @@ import {v4 as uuid} from "uuid"
 export  function ListItem() {
   const {name} = useItem()
   
- return(
-   name.map(names=>{
     return(
-      <li key={uuid()}>{names}</li>
-    )
-  }))
+      name.map(names=>{
+        
+         return(
+           <li key={uuid()}>{names}</li>
+         )
+        
+       
+     }))
+  
+
 }
